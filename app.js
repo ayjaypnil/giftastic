@@ -5,6 +5,7 @@ var topics = ["cat", "dog", "monkey", "elephant", "giraffe", "gorilla", "lion"];
 
 all();
 
+
 $("#addBtn").on("click", function (event) {
     
     event.preventDefault();
@@ -15,6 +16,8 @@ $("#addBtn").on("click", function (event) {
     topics.push(addTerm);
     
     all();
+
+    
 })
 
 // Your app should take the topics in this array and create buttons in your HTML.
@@ -29,6 +32,7 @@ function all() {
         // When the user clicks on a button, the page should grab 10 static, non - animated gif images from the GIPHY API and place them on the page.
 
         $(gifBtn).on("click", function () {
+            
 
             var topic = $(this).text();
             // console.log(topic);
@@ -58,7 +62,7 @@ function all() {
                     $(gifDiv).prepend(p);
                     $(gifDiv).prepend(topicImage);
 
-                    $(".gifSpace").append(gifDiv);
+                    $(".gifSpace").prepend(gifDiv);
 
                     // When the user clicks one of the still GIPHY images, the gif should animate.If the user clicks the gif again, it should stop playing.
                     $(topicImage).on("click", function () {
