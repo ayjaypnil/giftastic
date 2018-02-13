@@ -6,16 +6,16 @@ var topics = ["cat", "dog", "monkey", "elephant", "giraffe", "gorilla", "lion"];
 all();
 
 $("#addBtn").on("click", function (event) {
-
+    
     event.preventDefault();
+    
+    $("#buttonSpace").empty();
+    
     var addTerm = $("#addAnimal").val().trim();
     topics.push(addTerm);
-    $("#buttonSpace").empty();
-
+    
     all();
 })
-
-
 
 // Your app should take the topics in this array and create buttons in your HTML.
 // Try using a loop that appends a button for each string in the array.
@@ -27,7 +27,6 @@ function all() {
 
         $("#buttonSpace").append(gifBtn);
         // When the user clicks on a button, the page should grab 10 static, non - animated gif images from the GIPHY API and place them on the page.
-
 
         $(gifBtn).on("click", function () {
 
@@ -83,3 +82,10 @@ function all() {
 };
 
 
+
+
+
+
+
+
+// Deploy your assignment to Github Pages.
