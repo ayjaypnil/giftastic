@@ -1,23 +1,22 @@
 body{
-    background: url("timber.jpg")
+   margin-left: 25px;
+   margin-right: 25px;
 }
 
 img{
     height: 150px;
     width: 150px;
+    position: center;
 }
 
 .jumbotron{
-    background: rgb(189, 248, 248);
+    /* background: rgb(189, 248, 248); */
     
 }
 h1{
     font-size: 50px;
 }
 .panel {
-    background: rgb(189, 248, 248);
+    background: rgb(207, 207, 207);
 }
 
-#glyph{
-    size: 40px;
-}
